@@ -2,14 +2,16 @@
 
 Predicting a student's final grade using an Artificial Neural Network (ANN), based on academic history, study habits, family background, and lifestyle factors.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-ML%20Utils-f7931e?logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Beginner%20Project-yellow)
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/scikit--learn-ML%20Utils-f7931e?logo=scikitlearn&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white" height="30">
+<img src="https://img.shields.io/badge/License-MIT-green.svg" height="30">
+<img src="https://img.shields.io/badge/Status-Work%20in%20Progress-yellow" height="30">
+</p>
 
 ---
 
@@ -18,6 +20,8 @@ Predicting a student's final grade using an Artificial Neural Network (ANN), bas
 This project builds a simple feed-forward Artificial Neural Network (ANN) to predict a student's **final grade (G3, 0–20 scale)** in a Math course, using features like study time, past failures, parental education, absences, and social habits.
 
 It's designed as a **beginner-friendly deep learning project** covering the full ML pipeline: data loading, EDA, preprocessing, model building, training, evaluation, and visualization.
+
+> 🚧 **Status: Work in Progress.** This repo currently contains the project plan, dataset, and folder structure. Notebook development and results are in progress — see the [Roadmap](#-roadmap) below.
 
 ---
 
@@ -74,7 +78,7 @@ student-performance-ann/
 
 ---
 
-## 🧠 Model Architecture
+## 🧠 Planned Model Architecture
 
 A simple fully-connected ANN built with Keras:
 
@@ -110,25 +114,25 @@ Dense (1, linear)  → predicted G3
    ```bash
    jupyter notebook notebooks/Student_Performance_ANN.ipynb
    ```
-   Or open it directly in **Google Colab** — the notebook downloads the dataset automatically, no manual setup needed.
+   Or open it directly in **Google Colab** — the notebook will download the dataset automatically, no manual setup needed.
 
 ---
 
-## 📊 Results
+## 🗺️ Roadmap
 
-| Metric | Value |
-|---|---|
-| MAE | ~2.1 |
-| RMSE | ~2.6 |
-| R² | ~0.80 |
-
-*(Values will vary slightly depending on train/test split and random seed.)*
-
-The model performs well because `G1`/`G2` (earlier grades) are strong predictors of `G3`. As a stretch goal, dropping `G1`/`G2` makes the prediction task noticeably harder and more realistic.
+- [x] Set up project structure
+- [x] Source and document dataset
+- [ ] Exploratory Data Analysis (EDA)
+- [ ] Data preprocessing (encoding, scaling, train/test split)
+- [ ] Build ANN model
+- [ ] Train and tune model
+- [ ] Evaluate model (MAE, RMSE, R²)
+- [ ] Visualize results (loss curves, predicted vs actual)
+- [ ] Write up final results in this README
 
 ---
 
-## 🚀 Stretch Goals
+## 🚀 Stretch Goals (after v1 is complete)
 
 - [ ] Drop `G1`/`G2` and re-train on demographic/behavioral features only
 - [ ] Convert to a classification problem (pass/fail, `G3 ≥ 10`)
